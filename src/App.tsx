@@ -12,7 +12,9 @@ import logo from "./assets/km-b-t@2x.png";
 function App() {
   return (
     <>
-      <Helmet bodyAttributes={{ style: "background-color : #E663360D" }} />
+      <Helmet>
+        <style>{"body { background-color: #E663360D; }"}</style>
+      </Helmet>
       <Grid
         templateAreas={{
           base: `"logo logo"
