@@ -1,5 +1,13 @@
-import { Button, ButtonGroup, Grid, GridItem } from "@chakra-ui/react";
+import {
+  Button,
+  ButtonGroup,
+  Grid,
+  GridItem,
+  HStack,
+  Image,
+} from "@chakra-ui/react";
 import Helmet from "react-helmet";
+import logo from "./assets/km-b-t@2x.png";
 
 function App() {
   return (
@@ -17,8 +25,10 @@ function App() {
         "config basket"`,
         }}
       >
-        <GridItem area="logo" bg="green">
-          Logo
+        <GridItem area="logo">
+          <HStack padding="10px">
+            <Image src={logo} width="239px"></Image>
+          </HStack>
         </GridItem>
         <GridItem area="upload" bg="coral">
           Upload
