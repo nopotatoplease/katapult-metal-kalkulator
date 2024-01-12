@@ -8,6 +8,7 @@ import {
 } from "@chakra-ui/react";
 import Helmet from "react-helmet";
 import logo from "./assets/km-b-t@2x.png";
+import Upload from "./components/Upload";
 
 function App() {
   return (
@@ -32,8 +33,8 @@ function App() {
             <Image src={logo} width="239px"></Image>
           </HStack>
         </GridItem>
-        <GridItem area="upload" bg="coral">
-          Upload
+        <GridItem area="upload">
+          <Upload></Upload>
         </GridItem>
         <GridItem area="config" bg="gold">
           Config
