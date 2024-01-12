@@ -7,14 +7,19 @@ function App() {
       <Helmet bodyAttributes={{ style: "background-color : #E663360D" }} />
       <Grid
         templateAreas={{
-          base: `"upload upload" 
+          base: `"logo logo"
+          "upload upload" 
         "config config"
         "summary basket"`,
-          lg: `"upload upload" 
+          lg: `"logo logo"
+          "upload upload" 
         "config summary"
         "config basket"`,
         }}
       >
+        <GridItem area="logo" bg="green">
+          Logo
+        </GridItem>
         <GridItem area="upload" bg="coral">
           Upload
         </GridItem>
